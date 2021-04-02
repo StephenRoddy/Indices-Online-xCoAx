@@ -44,7 +44,7 @@ function setup() {
     fft = new p5.FFT();
     fft.setInput(audio);
 
-    txtNotes = createDiv('<p>The Body in the Machine: A retranslation of soundworks for 58(+1) Indices On The Body w/AMAE/DePinto, Jean-luc Nancy & composition by Stephen Roddy, mediated via Web & AI/ML technologies. </p>');
+    txtNotes = createDiv('<p>The Body in the Machine: A retranslation of soundworks for 58+1/63 Indices On The Body w/AMAE/DePinto, Jean-Luc Nancy & composition by Stephen Roddy, mediated via Web & AI/ML technologies. </p>');
     txtNotes.addClass("txt-note");
 
     // initialize sentiment analysis
@@ -146,7 +146,7 @@ function toggleAudio() {
 
 function textHandler() {
   txtNotes.remove();
-  txtNotes = createDiv('<p>'+txtArr[indNum]+'<div class = "att"></br>-Jean-luc Nancy, <i>Corpus, 1992:(Trans. R.A. Rand)</i></div>'+'</p>');
+  txtNotes = createDiv('<p>'+txtArr[indNum]+'<div class = "att"></br>-Jean-Luc Nancy, <i>Corpus, 1992:(Trans. R.A. Rand)</i></div>'+'</p>');
   txtNotes.addClass("txt-note");
 
   return txtArr
